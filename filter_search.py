@@ -2,12 +2,10 @@ import webbrowser
 import sys
 
 
-filter = []
+# filter = ['site:youtube.com']
 
-print(" ".join(sys.argv[1:]))
-
-url = 'http://pornhub.com/'
+url = 'https://www.google.com/search?q=' + '+'.join(sys.argv[1:])
 
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
 
-# webbrowser.get(chrome_path).open(url)
+webbrowser.get(chrome_path).open(url)
