@@ -1,10 +1,13 @@
 import webbrowser
 import sys
 import json
+from os.path import dirname, abspath
 
 
 def get_filter():
-  with open('filter_website.json') as f:
+  filter_path =dirname(abspath(__file__))
+  
+  with open(str(filter_path) + '\\filter_website.json') as f:
     data = json.load(f)
     
   return data['filter']
