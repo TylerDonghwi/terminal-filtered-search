@@ -1,0 +1,13 @@
+{
+  "filter": [
+    "reddit.com",
+    "stackoverflow.com",
+    "stackexchange.com",
+    "youtube.com",
+    "github.com",
+    "geeksforgeeks.org",
+    "medium.com",
+    "quora.com",
+    "wikipedia.org"
+  ]
+}

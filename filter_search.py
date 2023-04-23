@@ -1,10 +1,16 @@
 import webbrowser
 import sys
+import json
 
 
-filter = ['reddit.com', 'stackoverflow.com', 'stackexchange.com', 'youtube.com', 'github.com', ]
+def get_filter():
+  with open('filter_website.json') as f:
+    data = json.load(f)
+    
+  return data['filter']
 
 def add_filter():
+  filter = get_filter()
   res = ' ('
   for f in filter:
     res += 'site:' + f
