@@ -27,7 +27,6 @@ def search():
     print("enter something to search for")
   else:
     url = 'https://www.google.com/search?q=' + '+'.join(sys.argv[1:]) + add_filter()
-    chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
-    webbrowser.get(chrome_path).open(url)
+    webbrowser.open_new_tab(url)
     
 search()
